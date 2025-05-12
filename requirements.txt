@@ -1,6 +1,8 @@
 FastAPI
-uvicorn
+uvicorn[standard]
 pydantic
 sqlalchemy
-databases
+databases[asyncpg]
 httpx
+pydantic-settings
+psycopg2-binary

@@ -1,11 +1,6 @@
 from fastapi import FastAPI
+from app.routers.posts import router as posts_router
 
 app = FastAPI()
-
-# Include routers here
-# from app.routers import some_router
-# app.include_router(some_router)
-
-@app.get("/")
-def read_root():
-    return {"Hello": "World"}
+		
+app.include_router(posts_router)
